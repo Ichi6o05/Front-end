@@ -79,7 +79,7 @@
 	position:absolute;
 	width:100%;
 	height:100vh;
-	background:url(../img/background4.jpg);
+	background:url(img/background4.jpg);
 		animation:miAnimacion 24s linear 18s infinite;
 	-webkit-animation:miAnimacion 24s linear 18s infinite;
 	-moz-animation:miAnimacion 24s linear 18s infinite;
@@ -89,7 +89,7 @@
 	position:absolute;
 	width:100%;
 	height:100vh;
-	background:url(../img/background2.jpg);
+	background:url(img/background2.jpg);
 	background-size:cover;
 	animation:miAnimacion 24s linear 12s infinite;
 	-webkit-animation:miAnimacion 24s linear 12s infinite;
@@ -100,7 +100,7 @@
 	position:absolute;
 	width:100%;
 	height:100vh;
-	background:url(../img/background3.jpg);
+	background:url(img/background3.jpg);
 	background-size:cover;
 	animation:miAnimacion 24s linear 6s infinite;
 	-webkit-animation:miAnimacion 24s linear 6s infinite;
@@ -111,7 +111,7 @@
 	position:absolute;
 	width:100%;
 	height:100vh;
-	background:url(../img/background.jpg);
+	background:url(img/background.jpg);
 	animation:miAnimacion 24s linear 0s infinite;
 	-webkit-animation:miAnimacion 24s linear 0s infinite;
 	-moz-animation:miAnimacion 24s linear 0s infinite;
