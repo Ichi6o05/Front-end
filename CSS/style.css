@@ -111,7 +111,7 @@
 	position:absolute;
 	width:100%;
 	height:100vh;
-	background:url(https://github.com/Ichi6o05/Front-end/blob/bb5d9a0acb2e0855e610d4519862627da899b165/IMGs/background.jpg);
+	background:url(../IMGs/background.jpg);
 	animation:miAnimacion 24s linear 0s infinite;
 	-webkit-animation:miAnimacion 24s linear 0s infinite;
 	-moz-animation:miAnimacion 24s linear 0s infinite;
