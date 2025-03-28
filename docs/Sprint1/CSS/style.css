@@ -1,0 +1,253 @@
+*{
+	margin:0;
+	padding:0;
+	}
+
+html {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    }
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: center; /* Espacia los elementos */
+    align-items: center; /* Alinea verticalmente */
+    padding: 20px; /* Espaciado */
+    }
+
+body {
+    font-size: 1em;
+    }
+
+main {
+    background-image: url('../IMGs/fondo.webp');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    width: 100%;
+    }
+
+hr {
+    border: 1px solid #ffffff8e; 
+    width: 100%;
+    margin-bottom: 20px;
+    }
+      
+.homeIcon {
+    font-size: 50px;
+    cursor: pointer;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    }
+
+a .homeIcon {
+    text-decoration: none;
+    color: white;
+    }
+
+/* codigo para el menu */
+.menuBtn {
+    background: none;
+    cursor: pointer;
+    padding: 5px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    }
+
+.menuIcon {
+    font-size: 30px;
+    display: inline-block; 
+    }
+
+.menuClose {
+    display: none;
+    font-size: 30px;
+    width: 20px; 
+    height: 20px;
+    }
+
+.menuClose::before,
+.menuClose::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: .125em;
+    background: #fff;
+    top: 50%;
+    left: 0;
+    }
+
+.menuClose::before {
+    transform: rotate(45deg);
+    }
+
+.menuClose::after {
+    transform: rotate(-45deg);
+    }
+
+.navMenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    box-shadow: 0 .125em .313em rgba(255, 255, 255, 0.8);
+    z-index: 1000;
+    }
+
+.navMenu ul {
+    list-style: none;
+    padding: 0.5rem 1rem;
+    }
+
+.navMenu li {
+    padding: 0.8rem 0;
+    border-bottom: .063em solid #ffffff8e;
+    }
+
+.navMenu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    display: block;
+    }
+
+.contacto {
+    display: block;
+    box-shadow: 0 0 .5em rgb(255, 255, 255);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    margin: 1rem;
+    border-radius: 1em;
+    }
+
+
+#menuToggle {
+    display: none;
+    }
+
+#menuToggle:checked ~ .navMenu {
+    display: block;
+    }
+
+#menuToggle:checked ~ .menuBtn .menuIcon {
+    display: none; /* Ocultar el icono hamburguesa cuando el menú está abierto */
+    }
+
+#menuToggle:checked ~ .menuBtn .menuClose {
+    display: inline-block; /* Mostrar la X cuando el menú está abierto */
+    }
+/* hasta aqui */
+
+table, tr, td{
+    border: .063px double #fff;
+    margin: 1em 1em 0 1em; 
+    border-spacing: .6em;
+    }
+
+td p {
+    font-size: 1.5em;
+    align-items: center;
+    text-align: center;
+    }
+
+p a {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: .8em;
+    text-decoration: underline double;
+}
+
+
+
+
+
+/*
+article{
+    padding-top: 0;
+    position: relative;
+    width: 100%;
+    transition: all 0.3s ease;
+    }
+    
+article img:first-child{
+    box-shadow: 
+        0 60px 60px -60px rgba(0, 30, 255, 0.5);
+    border-radius: 4px;
+    object-fit: cover;
+    width: 100%;
+    }
+    
+article img:last-child{
+    position: absolute;
+    width: 80%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(25%);
+    transition: .3s ease;
+    opacity: 0;
+    }
+    
+article:hover img:first-child{
+    transform: 
+    perspective(250px)
+    translateZ(0);
+    filter: blur(3px);
+    }
+    
+article::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-image: 
+    linear-gradient(
+        to bottom,
+        transparent 10%,
+        rgba(0,0,0,0.5) 50%,
+        rgba(0,0,0) 95%
+        );
+    opacity: 0;
+    transition: all .3s ease;
+    }
+    
+article:hover::before{
+    opacity: 1;
+    }
+    
+article:hover img:last-child{
+    opacity: 1;
+    transform: translateY(10%);
+    }*/
+
+
+
+
+
+
+    
+
+
+
+@media (max-width: 600px) {
+    html {
+        font-size: 14px;
+        }
+    }
