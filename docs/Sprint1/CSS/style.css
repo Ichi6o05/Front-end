@@ -23,8 +23,8 @@ body {
 
 main {
     background-image: url('../IMGs/fondo.webp');
-    background-size: contain;
-    background-position: center;
+    background-size: cover;
+    background-position: right center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
