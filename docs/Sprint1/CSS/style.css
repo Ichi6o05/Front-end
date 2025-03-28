@@ -24,7 +24,7 @@ body {
 main {
     background-image: url('../IMGs/fondo.webp');
     background-size: cover;
-    background-position: right center;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
