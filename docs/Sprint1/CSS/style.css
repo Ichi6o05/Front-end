@@ -47,7 +47,7 @@ footer {
     margin-bottom: 3%;
     }
 
-#hrFooter {
+#hrFooter, #hrFooterIndex {
     border: 1px solid #ffffff8e;
     width: 100%;
     }
@@ -315,6 +315,9 @@ article:hover img:last-child{
 
 @media (max-width: 600px) {
     html {
-        font-size: 14px;
+	    font-size: 14px;
         }
+    #hrFooterIndex {
+	    border: none;
+    	}
     }
