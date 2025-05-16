@@ -1,0 +1,29 @@
+.mainSeparador {
+    border: 1px solid #ffffff8e;
+    width: 100%;
+}
+
+/* estilos de form */
+fieldset {
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding: 50px;
+    align-content: center;
+    text-align: center;
+    border-radius: 10px;
+    width: 60%;
+}
+
+legend {
+    padding: 10px;
+    font-size: 28px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.error {
+    color: rgb(255, 59, 59);
+    font-size: 1.2em;
+}
+

@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  background-color: #000000;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 1em;
+}
+
+/* Barra de menu */
+header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.homeIcon {
+  font-size: 50px;
+  cursor: pointer;
+  position: absolute;
+  left: 20px;
+  top: 10px;
+}
+
+a .homeIcon {
+  text-decoration: none;
+  color: white;
+}
+
+.menuBtn {
+  background: none;
+  cursor: pointer;
+  padding: 5px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+}
+
+.menuIcon {
+  font-size: 30px;
+  display: inline-block;
+}
+
+.menuClose {
+  display: none;
+  font-size: 30px;
+  width: 20px;
+  height: 20px;
+}
+
+.menuClose::before,
+.menuClose::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.125em;
+  background: #fff;
+  top: 50%;
+  left: 0;
+}
+
+.menuClose::before {
+  transform: rotate(45deg);
+}
+
+.menuClose::after {
+  transform: rotate(-45deg);
+}
+
+.navMenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: rgb(0, 0, 0);
+  box-shadow: 0 0.125em 0.313em rgba(255, 255, 255, 0.8);
+  z-index: 1000;
+}
+
+.navMenu ul {
+  list-style: none;
+  padding: 0.5rem 1rem;
+}
+
+.navMenu li {
+  padding: 0.8rem 0;
+  border-bottom: 0.063em solid #ffffff8e;
+}
+
+.navMenu a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1em;
+  display: block;
+}
+
+.contacto {
+  display: block;
+  box-shadow: 0 0 0.5em rgb(255, 255, 255);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+  margin: 1rem;
+  border-radius: 1em;
+}
+
+#menuToggle {
+  display: none;
+}
+
+#menuToggle:checked ~ .navMenu {
+  display: block;
+}
+
+#menuToggle:checked ~ .menuBtn .menuIcon {
+  display: none;
+}
+
+#menuToggle:checked ~ .menuBtn .menuClose {
+  display: inline-block;
+}
+
+/* ajustes del main */
+main {
+  background-color: #000000;
+  background-image: url("/IMGs/fondo.webp");
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+}
+
+
+/* IDs InfoManghwas */
+#mainInfo {
+  justify-items: center;
+}
+
+/* IDs Contacto */
+#nombre,
+#correo,
+#numero {
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 8%;
+  font-size: 16px;
+  border-radius: 20px;
+  width: 80%;
+}
+
+#btnEnviar {
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 20px;
+  width: 30%;
+}
+
+#formEnviadoText {
+  margin-top: 25%;
+  margin-bottom: 25%;
+  text-align: center;
+  font-size: 40px;
+}
+
+
+
+/* footer */
+footer {
+  font-size: 1.2em;
+  padding: 10px;
+  text-align: center;
+  background-color: #000000;
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 14px;
+  }
+
+  article.manga,
+  article.manhwa {
+    width: 100%;
+  }
+
+  #hrFooter {
+    border: none;
+  }
+}

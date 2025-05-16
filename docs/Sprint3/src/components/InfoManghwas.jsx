@@ -1,0 +1,325 @@
+import React, { useState } from "react";
+import stylesInfo from "../assets/CSS/Info.module.css";
+
+const VerMas = ({ index, activeIndex, setActiveIndex, children }) => {
+  const isActive = index === activeIndex;
+
+  const toggle = () => {
+    setActiveIndex(isActive ? null : index);
+  };
+
+  return (
+    <div style={{ marginBottom: "10px" }}>
+      {isActive && <div>{children}</div>}
+      <button
+        onClick={toggle}
+        className={`${stylesInfo.botonVerMas}`}
+      >
+        {isActive ? "Ver menos" : "Ver más"}
+      </button>
+    </div>
+  );
+};
+
+export const InfoManghwas = () => {
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  return (
+    <>
+      <main id="mainInfo">
+        <div className={stylesInfo.mainSeparador} />
+        <div className={stylesInfo.margenContenedor}>
+          <div className={stylesInfo.descripciones}>
+            <section id="Homunculus">
+              <h2>Homunculus</h2>
+              <p>
+                Nakoshi vive en su auto estacionado frente a un parque lleno de
+                vagabundos. Por su vestimenta no parece ser otro vagabundo más,
+                sin embargo está conviviendo con ellos. Un día se le acerca Ito,
+                un estudiante de medicina que le ofrece dinero a cambio de un
+                experimento llamado Trepanación. Luego de esta intervención
+                Nakoshi con sólo tapar su ojo derecho comienza a ver monstruos
+                en lugar de las personas.
+              </p>
+              <div id="div1">
+                <VerMas
+                  index={0}
+                  activeIndex={activeIndex}
+                  setActiveIndex={setActiveIndex}
+                >
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Inventore hic suscipit saepe! Adipisci eveniet voluptatem
+                    voluptas reprehenderit exercitationem rerum tempore
+                    voluptatum autem quas iure sunt numquam labore non facilis
+                    quos, corporis quam voluptatibus ipsam. Iusto praesentium
+                    aliquam, quas architecto asperiores facilis minus culpa ab
+                    sunt incidunt, eius numquam exercitationem quisquam velit
+                    soluta dignissimos deserunt nobis! Consequatur iure deleniti
+                    ad? Deserunt error sed ex natus dicta, hic provident.
+                    Aperiam temporibus vel ducimus magni veniam! A quam, porro
+                    ad totam provident veniam pariatur cum nostrum deserunt,
+                    vero quasi sequi. Et molestiae, eaque aut est laborum vel
+                    omnis aspernatur eveniet recusandae! Mollitia, consequuntur.
+                  </p>
+                </VerMas>
+              </div>
+            </section>
+            <section id="Oyasumi-punpun">
+              <h2>Oyasumi punpun</h2>
+              <p>
+                La historia comienza con la infancia de Punpun un joven
+                estudiante de primaria que vive en Japón junto a su madre y su
+                padre los cuáles están siempre discutiendo, Un día Punpun se
+                enamora a primera vista de Aiko una niña que acaba de ser
+                transferida a su colegio, A partir de ese momento, el chico
+                comenzará a experimentar en sus propias carnes lo qué significa
+                madurar y avanzar en la vida afrontar los diversos “palos” y
+                alegrías que está te da, tener sueños dé futuro y sobre todo
+                convertirse en una persona de la que poder sentirse orgulloso el
+                día de mañana.
+              </p>
+              <div id="div2">
+                <VerMas
+                  index={1}
+                  activeIndex={activeIndex}
+                  setActiveIndex={setActiveIndex}
+                >
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Consequatur consectetur perferendis nobis, voluptas commodi
+                    quo sint ratione voluptatibus et, dolore atque eligendi
+                    voluptatem. Quia ut officia voluptas tempore consequuntur
+                    sequi odio. Id consequuntur dolorum, saepe reiciendis fugit
+                    fugiat dicta doloremque commodi eius quo? Minima possimus,
+                    voluptates delectus veniam cupiditate aut, corporis odio
+                    dolor, illum quisquam dicta asperiores. Laudantium officiis
+                    suscipit expedita excepturi nihil sit quo odio. Repellat cum
+                    impedit quaerat, corrupti commodi maiores modi doloribus
+                    laboriosam repudiandae? Illum odit, asperiores deserunt hic
+                    distinctio ab quis cupiditate quam veritatis labore quas rem
+                    repudiandae perspiciatis. Aut, error sequi? Commodi aliquam
+                    sint quis!
+                  </p>
+                </VerMas>
+              </div>
+            </section>
+            <section id="HNK">
+              <h2>Houseki no kuni</h2>
+              <p>
+                En un lugar habitado por Gemas de apariencia humana, Fosfofilita
+                (Phosphophyllite) también llamada "Phos" es una débil gema
+                considerada como la mas inútil por sus otras compañeras. Phos
+                pide ayuda a su distante pero sabia compañera Cinabrio
+                (Cinnabar) en su tarea de completar una enciclopedia de las
+                formas de vida del lugar, resultando así en una extraña pero
+                bonita amistad; mientras sus otras compañeras y su maestro
+                llamado Sensei (Kongo) luchan contra seres llamados los
+                Lunarianos que amenazan con llevarselas por pura vanidad.
+              </p>
+              <div id="div3">
+                <VerMas
+                  index={2}
+                  activeIndex={activeIndex}
+                  setActiveIndex={setActiveIndex}
+                >
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ipsum soluta suscipit temporibus, sequi nobis fugiat
+                    explicabo placeat nam modi obcaecati magni quis! Doloremque,
+                    quam? Dolorum tempore, commodi nesciunt assumenda suscipit a
+                    explicabo vero exercitationem hic id ipsum ullam ipsam
+                    asperiores facere dolore qui, illum sequi ratione labore
+                    perferendis. Beatae minima porro enim, dolorem modi
+                    doloremque quaerat delectus id aut fugit quam at officia
+                    iure omnis aliquam. Veritatis, enim! Vel voluptatum velit
+                    quos possimus unde ad cupiditate iure saepe doloremque,
+                    sequi fugiat, laboriosam error veritatis dicta ipsam. Nam,
+                    doloribus, dicta et fugit, amet ab natus aliquid temporibus
+                    dolorum repellendus esse eius.
+                  </p>
+                </VerMas>
+              </div>
+            </section>
+            <section id="CSM">
+              <h2>Chainsaw man</h2>
+              <p>
+                Denji es un joven que, al fallecer su padre, fue acreditado con
+                una cantidad incontable de deudas, y para ser capaz de pagarlas
+                y salvarse de ser asesinado, vendería varias partes de su cuerpo
+                y utilizaría a su mascota demonio apodado Pochita para trabajar
+                a servicio de sus acreedores, sin embargo, todo cambia cuando se
+                fusiona con su mascota después de que esta muera. Dejándolo
+                libre de deudas y siendo llevado a vivir en la gran ciudad como
+                un Cazador de Demonios , aun así, a Denji le queda mucho que
+                aprender sobre su nuevo empleo y sus poderes de motosierra.
+              </p>
+              <div id="div4">
+                <VerMas
+                  index={3}
+                  activeIndex={activeIndex}
+                  setActiveIndex={setActiveIndex}
+                >
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ipsum soluta suscipit temporibus, sequi nobis fugiat
+                    explicabo placeat nam modi obcaecati magni quis! Doloremque,
+                    quam? Dolorum tempore, commodi nesciunt assumenda suscipit a
+                    explicabo vero exercitationem hic id ipsum ullam ipsam
+                    asperiores facere dolore qui, illum sequi ratione labore
+                    perferendis. Beatae minima porro enim, dolorem modi
+                    doloremque quaerat delectus id aut fugit quam at officia
+                    iure omnis aliquam. Veritatis, enim! Vel voluptatum velit
+                    quos possimus unde ad cupiditate iure saepe doloremque,
+                    sequi fugiat, laboriosam error veritatis dicta ipsam. Nam,
+                    doloribus, dicta et fugit, amet ab natus aliquid temporibus
+                    dolorum repellendus esse eius.
+                  </p>
+                </VerMas>
+              </div>
+            </section>
+            <section id="Solo-leveling">
+              <h2>Solo leveling</h2>
+              <p>
+                En un mundo de cazadores superdotados y monstruos, un débil
+                cazador adquiere poderes a través de un misterioso programa, lo
+                que le lleva a convertirse en uno de los cazadores más fuertes y
+                a conquistar las mazmorras más poderosas.
+              </p>
+              <div id="div5">
+                <VerMas
+                  index={4}
+                  activeIndex={activeIndex}
+                  setActiveIndex={setActiveIndex}
+                >
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ipsum soluta suscipit temporibus, sequi nobis fugiat
+                    explicabo placeat nam modi obcaecati magni quis! Doloremque,
+                    quam? Dolorum tempore, commodi nesciunt assumenda suscipit a
+                    explicabo vero exercitationem hic id ipsum ullam ipsam
+                    asperiores facere dolore qui, illum sequi ratione labore
+                    perferendis. Beatae minima porro enim, dolorem modi
+                    doloremque quaerat delectus id aut fugit quam at officia
+                    iure omnis aliquam. Veritatis, enim! Vel voluptatum velit
+                    quos possimus unde ad cupiditate iure saepe doloremque,
+                    sequi fugiat, laboriosam error veritatis dicta ipsam. Nam,
+                    doloribus, dicta et fugit, amet ab natus aliquid temporibus
+                    dolorum repellendus esse eius.
+                  </p>
+                </VerMas>
+              </div>
+            </section>
+            <section id="Lector-omnisciente">
+              <h2>Lector omnisciente</h2>
+              <p>
+                Un día, Kim Dok Ja se enfrenta al mundo convirtiéndose en la
+                novela web "Tres formas de sobrevivir en un mundo en ruinas".
+                Mientras tanto, Yoo Joong Hyeok es el personaje principal de
+                "Tres formas de sobrevivir en un mundo en ruinas". Tiene la
+                habilidad especial de volver a la vida después de su muerte.
+              </p>
+              <div id="div6">
+                <VerMas
+                  index={5}
+                  activeIndex={activeIndex}
+                  setActiveIndex={setActiveIndex}
+                >
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ipsum soluta suscipit temporibus, sequi nobis fugiat
+                    explicabo placeat nam modi obcaecati magni quis! Doloremque,
+                    quam? Dolorum tempore, commodi nesciunt assumenda suscipit a
+                    explicabo vero exercitationem hic id ipsum ullam ipsam
+                    asperiores facere dolore qui, illum sequi ratione labore
+                    perferendis. Beatae minima porro enim, dolorem modi
+                    doloremque quaerat delectus id aut fugit quam at officia
+                    iure omnis aliquam. Veritatis, enim! Vel voluptatum velit
+                    quos possimus unde ad cupiditate iure saepe doloremque,
+                    sequi fugiat, laboriosam error veritatis dicta ipsam. Nam,
+                    doloribus, dicta et fugit, amet ab natus aliquid temporibus
+                    dolorum repellendus esse eius.
+                  </p>
+                </VerMas>
+              </div>
+            </section>
+            <section id="TBATE">
+              <h2>La vida despues de la muerte</h2>
+              <p>
+                El tiempo corre para todos, incluso para las personas más
+                extraordinarias; este es el caso de Grey, el monarca de un reino
+                próspero que muere de forma extraña y abrupta, pero que recibe
+                una segunda oportunidad al reencarnarse en Arthur Leywin, un
+                bebé nacido en un mundo lleno de magia y monstruos. Dado que
+                conserva los recuerdos de su vida anterior y el deseo de
+                proteger a los que le rodean, Art entrena y estudia para volver
+                a ser un guerrero de renombre, tanto con la magia como con la
+                espada.
+              </p>
+              <div id="div7">
+                <VerMas
+                  index={6}
+                  activeIndex={activeIndex}
+                  setActiveIndex={setActiveIndex}
+                >
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ipsum soluta suscipit temporibus, sequi nobis fugiat
+                    explicabo placeat nam modi obcaecati magni quis! Doloremque,
+                    quam? Dolorum tempore, commodi nesciunt assumenda suscipit a
+                    explicabo vero exercitationem hic id ipsum ullam ipsam
+                    asperiores facere dolore qui, illum sequi ratione labore
+                    perferendis. Beatae minima porro enim, dolorem modi
+                    doloremque quaerat delectus id aut fugit quam at officia
+                    iure omnis aliquam. Veritatis, enim! Vel voluptatum velit
+                    quos possimus unde ad cupiditate iure saepe doloremque,
+                    sequi fugiat, laboriosam error veritatis dicta ipsam. Nam,
+                    doloribus, dicta et fugit, amet ab natus aliquid temporibus
+                    dolorum repellendus esse eius.
+                  </p>
+                </VerMas>
+              </div>
+            </section>
+            <section id="Lookism">
+              <h2>Lookism</h2>
+              <p>
+                De perdedor y feo a popular y apuesto.... Un chico llamado
+                Daniel Park que le sucede un milagro de la noche a la mañana. Se
+                centra en muchos temas temáticos como el maltrato animal, el
+                acoso y las opiniones de la sociedad hacia las personas con
+                sobrepeso o de aspecto feo aunque una gran parte de villanos al
+                inico son feos. La historia gira en torno a Daniel Park un
+                estudiante de secundaria que puede cambiar entre dos cuerpos:
+                uno gordo y feo, y el otro atlético y guapo.
+              </p>
+              <div id="div8">
+                <VerMas
+                  index={7}
+                  activeIndex={activeIndex}
+                  setActiveIndex={setActiveIndex}
+                >
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ipsum soluta suscipit temporibus, sequi nobis fugiat
+                    explicabo placeat nam modi obcaecati magni quis! Doloremque,
+                    quam? Dolorum tempore, commodi nesciunt assumenda suscipit a
+                    explicabo vero exercitationem hic id ipsum ullam ipsam
+                    asperiores facere dolore qui, illum sequi ratione labore
+                    perferendis. Beatae minima porro enim, dolorem modi
+                    doloremque quaerat delectus id aut fugit quam at officia
+                    iure omnis aliquam. Veritatis, enim! Vel voluptatum velit
+                    quos possimus unde ad cupiditate iure saepe doloremque,
+                    sequi fugiat, laboriosam error veritatis dicta ipsam. Nam,
+                    doloribus, dicta et fugit, amet ab natus aliquid temporibus
+                    dolorum repellendus esse eius.
+                  </p>
+                </VerMas>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div className={stylesInfo.mainSeparador} />
+      </main>
+    </>
+  );
+};
