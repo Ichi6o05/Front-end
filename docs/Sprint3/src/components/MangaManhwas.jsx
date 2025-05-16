@@ -52,7 +52,7 @@ export const MangaManhwas = ({ navegar }) => {
           <article className={stylesManga.manga}>
             <picture>
               <img
-                src="/Front-end/docs/Sprin3/Front-end/Sprin3/IMGs/housekiNoKuni.webp"
+                src="public/IMGs/housekiNoKuni.webp"
                 alt="houseki no kuni manga imagen"
               />
             </picture>
@@ -66,7 +66,7 @@ export const MangaManhwas = ({ navegar }) => {
           <article className={stylesManga.manga}>
             <picture>
               <img
-                src="/Front-end/docs/Sprin3/Front-end/Sprin3/IMGs/chainsawman.webp"
+                src="public/IMGs/chainsawman.webp"
                 alt="chainsaw man manga imagen"
               />
             </picture>
@@ -104,7 +104,7 @@ export const MangaManhwas = ({ navegar }) => {
           <article className={stylesManga.manhwa}>
             <picture>
               <img
-                src="/Front-end/docs/Sprin3/Front-end/Sprin3/IMGs/soloLeveling.webp"
+                src="/IMGs/soloLeveling.webp"
                 alt="solo leveling manhwa imagen"
               />
             </picture>
@@ -118,7 +118,7 @@ export const MangaManhwas = ({ navegar }) => {
           <article className={stylesManga.manhwa}>
             <picture>
               <img
-                src="/Front-end/docs/Sprin3/Front-end/Sprin3/IMGs/omniscientReader.webp"
+                src="../public/IMGs/omniscientReader.webp"
                 alt="omniscient reader viewpoint imagen"
               />
             </picture>
@@ -132,7 +132,7 @@ export const MangaManhwas = ({ navegar }) => {
           <article className={stylesManga.manhwa}>
             <picture>
               <img
-                src="/Front-end/docs/Sprin3/Front-end/Sprin3/IMGs/beginningAfter.webp"
+                src="/Front-end/Sprin3/IMGs/beginningAfter.webp"
                 alt="beginning after the end imagen"
               />
             </picture>
@@ -145,7 +145,7 @@ export const MangaManhwas = ({ navegar }) => {
           </article>
           <article className={stylesManga.manhwa}>
             <picture>
-              <img src="/Front-end/docs/Sprin3/Front-end/Sprin3/IMGs/lookism.webp" alt="lookism imagen" />
+              <img src="../IMGs/lookism.webp" alt="lookism imagen" />
             </picture>
             <p>Lookism</p>
             <p>
