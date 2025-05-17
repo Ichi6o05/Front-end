@@ -142,7 +142,7 @@ a .homeIcon {
 /* ajustes del main */
 main {
   background-color: #000000;
-  background-image: url("/IMGs/fondo.webp");
+  background-image: url("../public/IMGs/fondo.webp");
   background-size: contain;
   background-position: bottom;
   background-repeat: no-repeat;
