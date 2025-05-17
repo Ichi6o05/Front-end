@@ -6,7 +6,8 @@
 
 
 /* ajustes section galeria */
-section {
+section.manga,
+section.manhwa {
     border: 1px solid #ccc;  /* Borde alrededor de cada sección */
     max-width: 650px;
     border-radius: 10px;
@@ -23,7 +24,8 @@ section.manhwa {
     padding: 1.5rem .8rem;
 }
 
-section h2 {
+section.manga h2,
+section.manhwa h2 {
     width: 60%;
     text-align: center;
     text-decoration: underline;

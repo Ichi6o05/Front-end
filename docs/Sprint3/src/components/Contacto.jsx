@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import stylesContact from "../assets/CSS/Contacto.module.css";
 
-export const Contacto = () => {
+
+export const Contacto = ({ contactos, setContactos, navegar }) => {
   const [nombre, setNombre] = useState("");
   const [correo, setCorreo] = useState("");
   const [numero, setNumero] = useState("");
@@ -12,10 +13,8 @@ export const Contacto = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     let valido = true;
 
-    // Validación nombre
     if (nombre.trim().length < 3 || /\d/.test(nombre)) {
       setErrorNombre("Nombre inválido (mínimo 3 letras y sin números)");
       valido = false;
@@ -23,7 +22,6 @@ export const Contacto = () => {
       setErrorNombre("");
     }
 
-    // Validación correo
     const validadorCorreo = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
     if (!validadorCorreo.test(correo.trim())) {
       setErrorCorreo("Correo inválido");
@@ -32,7 +30,6 @@ export const Contacto = () => {
       setErrorCorreo("");
     }
 
-    // Validación teléfono
     if (!/^\d{9}$/.test(numero.trim())) {
       setErrorTelefono("Teléfono debe tener 9 dígitos");
       valido = false;
@@ -41,8 +38,10 @@ export const Contacto = () => {
     }
 
     if (valido) {
+      const nuevo = { nombre, correo, numero };
+      setContactos([...contactos, nuevo]);
       alert("Formulario enviado con éxito");
-      // Limpiar campos si se envia correctamente
+      // Limpia los campos
       setNombre("");
       setCorreo("");
       setNumero("");
@@ -99,6 +98,15 @@ export const Contacto = () => {
             <br />
 
             <input id="btnEnviar" type="submit" value="Enviar" />
+            <br />
+            <button
+              id="btnEnviar"
+              type="button"
+              onClick={() => navegar("ContactosEnviados")}
+              style={{ marginTop: "10px" }}
+            >
+              Ver datos enviados
+            </button>
           </fieldset>
         </form>
         <div className={stylesContact.mainSeparador} />

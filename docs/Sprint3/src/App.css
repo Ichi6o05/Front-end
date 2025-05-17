@@ -153,7 +153,7 @@ main {
 
 /* IDs InfoManghwas */
 #mainInfo {
-  justify-items: center;
+  justify-items: center !important;
 }
 
 /* IDs Contacto */

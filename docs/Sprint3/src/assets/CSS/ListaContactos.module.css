@@ -1,0 +1,35 @@
+.container {
+  box-shadow: 0 0 10px #ffffff;
+  background-color: #000000e0;
+  text-align: center;
+  margin: 20px auto;
+  width: 85%;
+}
+
+.h2 {
+  padding: 2em;
+}
+
+.lista {
+  list-style-type: none;
+  padding: 0;
+}
+
+.item {
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+
+.noContactos {
+  text-align: center;
+  font-style: italic;
+  margin: 20px 0;
+}
+
+.mainContainer {
+  min-height: calc(100vh - 120px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
